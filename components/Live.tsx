@@ -18,7 +18,7 @@ const Live = () => {
   const broadcast = useBroadcastEvent();
 
   useInterval(()=>{
-    setInterval((reaction)=> reaction.filter((r)=> r.timestamp > Date.now() - 4000))
+    setReaction((reaction)=> reaction.filter((reaction)=> reaction.timestamp > Date.now() - 4000))
   },1000)
 
   useInterval(()=>{
