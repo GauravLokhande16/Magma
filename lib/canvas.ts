@@ -89,10 +89,7 @@ export const handleCanvasMouseDown = ({
     isDrawing.current = true;
 
     // create custom fabric object/shape and set it to shapeRef
-    shapeRef.current = createSpecificShape(
-      selectedShapeRef.current,
-      pointer as any
-    );
+    shapeRef.current = createSpecificShape(selectedShapeRef.current, pointer as any);
 
     // if shapeRef is not null, add it to canvas
     if (shapeRef.current) {
